@@ -2,21 +2,23 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  
+  background-color: var(--bg-page);
+  transition: background-color 0.3s ease;
 }
 
 .skills-container {
   width: 88%;
   transform: translateY(-8rem);
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
   border-radius: 3.5rem;
   max-width: 1250px;
+  transition: background-color 0.3s ease;
 }
   
 .skills-grid {
-  display: grid;  
-  box-shadow: 0.5rem 0.5rem 2rem 0.5rem #eee;
+  display: grid;
+  box-shadow: 0.5rem 0.5rem 2rem 0.5rem var(--shadow-color);
   border-radius: 3.5rem;
 }
 
@@ -67,10 +69,10 @@
   }
 
   .frontend, .database {
-    background: #6200ea;
+    background: var(--bg-accent);
     border-radius: 3.5rem;
-    color: white; 
-    box-shadow: 0.2rem 0.2rem 3rem 0.1rem mediumpurple;
+    color: var(--text-on-accent);
+    box-shadow: 0.2rem 0.2rem 3rem 0.1rem var(--color-accent);
   }
 }
 
@@ -80,13 +82,11 @@
   }
 
   .frontend, .other-tech {
-    background: #6200ea;
+    background: var(--bg-accent);
     border-radius: 3.5rem;
-    color: white;
-    box-shadow: 0.2rem 0.2rem 3rem 0.1rem mediumpurple;
-    
+    color: var(--text-on-accent);
+    box-shadow: 0.2rem 0.2rem 3rem 0.1rem var(--color-accent);
   }
- 
 }
 
 @media (max-width: 767px) {
@@ -95,10 +95,10 @@
   }
 
   .frontend, .database {
-    background: #6200ea;
+    background: var(--bg-accent);
     border-radius: 3.5rem;
-    color:white;
-    box-shadow: 0.2rem 0.2rem 3rem 0.1rem mediumpurple;
+    color: var(--text-on-accent);
+    box-shadow: 0.2rem 0.2rem 3rem 0.1rem var(--color-accent);
   }
 }
   

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Animation from './components/Animation';
 import Connect from './components/Connect';
@@ -9,10 +9,13 @@ import Contact from './components/Contact';
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+  const toggleTheme = () => setTheme(t => t === 'light' ? 'dark' : 'light');
+
   return (
-    <div className="App">
-      <Navbar />
-      <Home />      
+    <div className="App" data-theme={theme}>
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
+      <Home />
       <Skills />
       <Background />
       <Projects />
